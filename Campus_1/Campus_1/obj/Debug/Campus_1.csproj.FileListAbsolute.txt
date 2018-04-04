@@ -1,0 +1,7 @@
+C:\Users\avill\C-sharp\Campus_1\Campus_1\bin\Debug\Campus_1.exe.config
+C:\Users\avill\C-sharp\Campus_1\Campus_1\bin\Debug\Campus_1.exe
+C:\Users\avill\C-sharp\Campus_1\Campus_1\bin\Debug\Campus_1.pdb
+C:\Users\avill\C-sharp\Campus_1\Campus_1\obj\Debug\Campus_1.csprojResolveAssemblyReference.cache
+C:\Users\avill\C-sharp\Campus_1\Campus_1\obj\Debug\Campus_1.csproj.CoreCompileInputs.cache
+C:\Users\avill\C-sharp\Campus_1\Campus_1\obj\Debug\Campus_1.exe
+C:\Users\avill\C-sharp\Campus_1\Campus_1\obj\Debug\Campus_1.pdb

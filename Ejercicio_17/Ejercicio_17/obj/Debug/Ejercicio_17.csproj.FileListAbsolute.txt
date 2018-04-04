@@ -1,0 +1,6 @@
+D:\VisualStudio\Ejercicio_17\Ejercicio_17\bin\Debug\Ejercicio_17.exe.config
+D:\VisualStudio\Ejercicio_17\Ejercicio_17\bin\Debug\Ejercicio_17.exe
+D:\VisualStudio\Ejercicio_17\Ejercicio_17\bin\Debug\Ejercicio_17.pdb
+D:\VisualStudio\Ejercicio_17\Ejercicio_17\obj\Debug\Ejercicio_17.csprojResolveAssemblyReference.cache
+D:\VisualStudio\Ejercicio_17\Ejercicio_17\obj\Debug\Ejercicio_17.exe
+D:\VisualStudio\Ejercicio_17\Ejercicio_17\obj\Debug\Ejercicio_17.pdb
