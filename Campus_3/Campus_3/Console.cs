@@ -62,8 +62,7 @@ namespace Campus_3
             string numeroBinario = Conversor.EnteroBinario(numeroEntero);            
             System.Console.ForegroundColor = ConsoleColor.White;
             System.Console.WriteLine("El numero binario es : " + numeroBinario.ToString());
-            System.Console.Write("Presione cual tecla para volver al menu....");
-            System.Console.ReadKey();
+            ProcesarContinuar();
         }
 
         /// <summary>
