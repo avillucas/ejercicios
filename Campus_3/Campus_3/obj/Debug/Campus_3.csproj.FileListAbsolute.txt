@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\ejercicios\Campus_3\Campus_3\bin\Debug\Campus_3.exe.config
+C:\Users\alumno\Desktop\ejercicios\Campus_3\Campus_3\bin\Debug\Campus_3.exe
+C:\Users\alumno\Desktop\ejercicios\Campus_3\Campus_3\bin\Debug\Campus_3.pdb
+C:\Users\alumno\Desktop\ejercicios\Campus_3\Campus_3\obj\Debug\Campus_3.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\ejercicios\Campus_3\Campus_3\obj\Debug\Campus_3.exe
+C:\Users\alumno\Desktop\ejercicios\Campus_3\Campus_3\obj\Debug\Campus_3.pdb
