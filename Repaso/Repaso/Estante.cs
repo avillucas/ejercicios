@@ -54,14 +54,16 @@ namespace Repaso
         /// </summary>
         /// <param name="estante"></param>
         /// <returns>Retorna el valor </returns>
-        public string MostrarEstante(Estante estante) {
+        public static string MostrarEstante(Estante estante) 
+        {
             StringBuilder strEstante = new StringBuilder();
-            strEstante.AppendFormat("El estante esta ubiucado en {0} productos ",estante.GetUbicacion());
+            strEstante.AppendFormat("El estante esta ubicado en {0} ",estante.GetUbicacion());
             strEstante.AppendLine();
             strEstante.AppendFormat("Sus productos son:");
-            strEstante.AppendLine();            
-            foreach (Producto producto in this.productos) {
-                strEstante.AppendLine(Producto.MostrarProducto(producto));            
+            strEstante.AppendLine();
+            foreach (Producto producto in estante.GetProductos())
+            {
+                strEstante.AppendLine(Producto.MostrarProducto(producto));
             }
             return strEstante.ToString();
         }
@@ -72,9 +74,16 @@ namespace Repaso
         /// <param name="estante">Estante en el que buscar a producto</param>
         /// <param name="producto">Producto que buscar en estante</param>
         /// <returns>Devolvera TRUE en caso de que el producto se encuentre en el estante</returns>
-        public static bool operator ==(Estante estante, Producto producto) { 
-            int posicion =  Array.IndexOf(estante.GetProductos(),producto);
-            return (posicion != -1);
+        public static bool operator ==(Estante estante, Producto producto) 
+        {             
+            foreach (Producto posibleProducto in estante.GetProductos()) 
+            {
+                if (!Object.ReferenceEquals(posibleProducto, null) && producto == posibleProducto)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         /// <summary>
@@ -84,8 +93,7 @@ namespace Repaso
         /// <param name="producto">Producto que buscar en estante</param>
         /// <returns>Devolvera TRUE en caso de que el producto NO se encuentre en el estante</returns>
         public static bool operator !=(Estante estante, Producto producto) {
-            int posicion = Array.IndexOf(estante.GetProductos(), producto);
-            return (posicion == -1);
+            return !(estante + producto);            
         }
 
         /// <summary>
@@ -95,15 +103,41 @@ namespace Repaso
         /// <param name="estante"></param>
         /// <param name="producto"></param>
         /// <returns></returns>
-        public static bool operator +(Estante estante, Producto producto){
-            int cargaActual = estante.GetProductos().Length;
-            int capacidad = estante.GetProductos().Rank;
-            // si el estante posee capacidad de almacenar al menos un producto más
-            if (cargaActual + 1 > capacidad) { return false; }
-            /// y dicho producto no se encuentra en él
-            if (Array.IndexOf(estante.GetProductos(),producto) != -1) { return false; }
-            estante.AddProducto(producto);
-            return f;
+        public static bool operator +(Estante estante, Producto producto){            
+            if (estante == producto){
+                return false;            
+            }
+            // si el estante posee capacidad de almacenar al menos un producto más            
+            for (int i = 0; i < estante.GetProductos().Length; i++)
+            {
+                //Ver si queda un espacio 
+                if (Object.ReferenceEquals(estante.GetProductos()[i], null))
+                {
+                    //eliminarlo
+                    estante.productos[i] = producto;
+                    return true;
+                }
+            }
+            //no existia espacio
+            return false;
         }
+
+        public static Estante operator -(Estante estante, Producto producto) {
+            //El producto esta en el estante 
+            if (estante == producto) {
+                for (int i = 0; i < estante.GetProductos().Length; i++)
+                {
+                    //Ver si queda un espacio 
+                    if(estante.GetProductos()[i] == producto)
+                    {
+                        //eliminarlo
+                        estante.GetProductos()[i] = null;
+                        break;
+                    }
+                }
+            }         
+            return estante;
+        }
+        
     }
 }

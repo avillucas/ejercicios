@@ -55,10 +55,12 @@ namespace Repaso
         /// <param name="producto">Producto a describir</param>
         /// <returns>Atributos del producto</returns>
         public static string MostrarProducto(Producto producto){
-            StringBuilder productoStr = new StringBuilder();
-            productoStr.AppendFormat("Marca: {0}", producto.GetMarca());
-            productoStr.AppendFormat("Precio: {0}", producto.GetPrecio());
-            productoStr.AppendFormat("Codigo de Barras: {0}", (string) producto);
+            StringBuilder productoStr = new StringBuilder();        
+            productoStr.AppendFormat("  Marca: {0}", producto.GetMarca());
+            productoStr.AppendLine();
+            productoStr.AppendFormat("  Precio: {0}", producto.GetPrecio());
+            productoStr.AppendLine();
+            productoStr.AppendFormat("  Codigo de Barras: {0}", (string)producto);            
             return productoStr.ToString();
         }
 
@@ -78,7 +80,7 @@ namespace Repaso
         /// <param name="p1">Producto que comparar con el primero</param>
         /// <returns>Retorna true en caso de que sean el mismo producto</returns>
         public static bool operator  == (Producto p, Producto p1){
-            return p.GetCodigoDeBarras().Equals(p1.GetCodigoDeBarras());
+            return p.GetMarca() == p1.GetMarca();
         }
 
         /// <summary>
@@ -88,7 +90,7 @@ namespace Repaso
         /// <param name="p1">Producto que comparar con el primero</param>
         /// <returns>Retorna true en caso de que NO sean el mismo producto</returns>
         public static bool operator  != (Producto p, Producto p1){
-            return !p.GetCodigoDeBarras().Equals(p1.GetCodigoDeBarras());
+            return p.GetMarca() != p1.GetMarca();
         }
 
         /// <summary>
@@ -98,7 +100,7 @@ namespace Repaso
         /// <param name="marca">Marca con la que comprare el producto</param>
         /// <returns>Devuelve TRUE en caso de la marca de producto sea la indicada en marca</returns>
         public static bool operator ==(Producto producto, string marca) {
-            return (producto.GetMarca().Equals(marca));
+            return producto.GetMarca() == marca;
         }
 
         /// <summary>
@@ -108,7 +110,7 @@ namespace Repaso
         /// <param name="marca">Marca con la que comprare el producto</param>
         /// <returns>Devuelve TRUE en caso de la marca de producto NO sea la indicada en marca</returns>
         public static bool operator !=(Producto producto, string marca) { 
-            return ! producto.GetMarca().Equals(marca);
+            return producto.GetMarca() != marca;
         }
     }
 }
