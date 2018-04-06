@@ -1,6 +1,6 @@
 ﻿namespace MiCalculadora
 {
-    partial class Form1
+    partial class LaCalculadora
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,10 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnConvertirABinario = new System.Windows.Forms.Button();
             this.btnConvertirADecimal = new System.Windows.Forms.Button();
-            this.txtOperando1 = new System.Windows.Forms.TextBox();
-            this.txtOperando2 = new System.Windows.Forms.TextBox();
-            this.cmbOperador = new System.Windows.Forms.ComboBox();
-            this.txtResultado = new System.Windows.Forms.Label();
+            this.txtNumero1 = new System.Windows.Forms.TextBox();
+            this.txtNumero2 = new System.Windows.Forms.TextBox();
+            this.cmbOperar = new System.Windows.Forms.ComboBox();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOperar
@@ -89,45 +89,51 @@
             this.btnConvertirADecimal.UseVisualStyleBackColor = true;
             this.btnConvertirADecimal.Click += new System.EventHandler(this.btnConvertirADecimal_Click);
             // 
-            // txtOperando1
+            // txtNumero1
             // 
-            this.txtOperando1.Location = new System.Drawing.Point(76, 69);
-            this.txtOperando1.Name = "txtOperando1";
-            this.txtOperando1.Size = new System.Drawing.Size(100, 20);
-            this.txtOperando1.TabIndex = 5;
+            this.txtNumero1.Location = new System.Drawing.Point(76, 69);
+            this.txtNumero1.Name = "txtNumero1";
+            this.txtNumero1.Size = new System.Drawing.Size(100, 20);
+            this.txtNumero1.TabIndex = 5;
             // 
-            // txtOperando2
+            // txtNumero2
             // 
-            this.txtOperando2.Location = new System.Drawing.Point(376, 69);
-            this.txtOperando2.Name = "txtOperando2";
-            this.txtOperando2.Size = new System.Drawing.Size(100, 20);
-            this.txtOperando2.TabIndex = 6;
+            this.txtNumero2.Location = new System.Drawing.Point(376, 69);
+            this.txtNumero2.Name = "txtNumero2";
+            this.txtNumero2.Size = new System.Drawing.Size(100, 20);
+            this.txtNumero2.TabIndex = 6;
             // 
-            // cmbOperador
+            // cmbOperar
             // 
-            this.cmbOperador.FormattingEnabled = true;
-            this.cmbOperador.Location = new System.Drawing.Point(205, 68);
-            this.cmbOperador.Name = "cmbOperador";
-            this.cmbOperador.Size = new System.Drawing.Size(121, 21);
-            this.cmbOperador.TabIndex = 7;
+            this.cmbOperar.FormattingEnabled = true;
+            this.cmbOperar.Items.AddRange(new object[] {
+            "/",
+            "*",
+            "+",
+            "-"});
+            this.cmbOperar.Location = new System.Drawing.Point(205, 68);
+            this.cmbOperar.Name = "cmbOperar";
+            this.cmbOperar.Size = new System.Drawing.Size(121, 21);
+            this.cmbOperar.TabIndex = 7;
             // 
-            // txtResultado
+            // lblResultado
             // 
-            this.txtResultado.AutoSize = true;
-            this.txtResultado.Location = new System.Drawing.Point(373, 9);
-            this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(0, 13);
-            this.txtResultado.TabIndex = 8;
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Location = new System.Drawing.Point(373, 9);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(86, 13);
+            this.lblResultado.TabIndex = 8;
+            this.lblResultado.Text = "sadasdasdasdas";
             // 
-            // Form1
+            // LaCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 262);
-            this.Controls.Add(this.txtResultado);
-            this.Controls.Add(this.cmbOperador);
-            this.Controls.Add(this.txtOperando2);
-            this.Controls.Add(this.txtOperando1);
+            this.Controls.Add(this.lblResultado);
+            this.Controls.Add(this.cmbOperar);
+            this.Controls.Add(this.txtNumero2);
+            this.Controls.Add(this.txtNumero1);
             this.Controls.Add(this.btnConvertirADecimal);
             this.Controls.Add(this.btnConvertirABinario);
             this.Controls.Add(this.btnCerrar);
@@ -135,7 +141,7 @@
             this.Controls.Add(this.btnOperar);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "LaCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Lucas Ariel Avila del 2ºC";
             this.ResumeLayout(false);
@@ -150,10 +156,10 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnConvertirABinario;
         private System.Windows.Forms.Button btnConvertirADecimal;
-        private System.Windows.Forms.TextBox txtOperando1;
-        private System.Windows.Forms.TextBox txtOperando2;
-        private System.Windows.Forms.ComboBox cmbOperador;
-        private System.Windows.Forms.Label txtResultado;
+        private System.Windows.Forms.TextBox txtNumero1;
+        private System.Windows.Forms.TextBox txtNumero2;
+        private System.Windows.Forms.ComboBox cmbOperar;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
 

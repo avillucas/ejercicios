@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace MiCalculadora
 {
-    static class LaCalculadora
+    static class MiCalculadora
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace MiCalculadora
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new LaCalculadora());
         }
     }
 }

@@ -1,0 +1,5 @@
+D:\lucas\MiCalculadora\Entidades\bin\Debug\Entidades.exe.config
+D:\lucas\MiCalculadora\Entidades\bin\Debug\Entidades.exe
+D:\lucas\MiCalculadora\Entidades\bin\Debug\Entidades.pdb
+D:\lucas\MiCalculadora\Entidades\obj\Debug\Entidades.exe
+D:\lucas\MiCalculadora\Entidades\obj\Debug\Entidades.pdb

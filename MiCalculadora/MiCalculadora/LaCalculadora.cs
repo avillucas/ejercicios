@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 
 namespace MiCalculadora
 {
-    public partial class Form1 : Form
+    public partial class LaCalculadora : Form
     {
-        public Form1()
+        public LaCalculadora()
         {
             InitializeComponent();
         }
@@ -25,10 +26,10 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            txtResultado.Text="";
-            txtOperando1.Text = "";
-            txtOperando2.Text = "";
-            //TODO analizar si hay que devolver el combox a algun valor
+            lblResultado.Text="";
+            txtNumero1.Text = "";
+            txtNumero2.Text = "";
+            cmbOperar.Text = "";            
         }
 
         /// <summary>
@@ -55,7 +56,10 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-
+            if (lblResultado.Text.Length > 0) {
+                string strResultado = Numero.DecimalABinario(lblResultado.Text);
+                lblResultado.Text = strResultado;
+            }
         }
 
         /// <summary>
@@ -65,7 +69,13 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-
+            //TODO validar si el numero es binario            
+            bool esBinario = true;
+            if (lblResultado.Text.Length > 0 && esBinario )
+            {
+                string strResultado = Numero.BinarioDecimal(lblResultado.Text);
+                lblResultado.Text = strResultado;
+            }
         }
     }
 }
