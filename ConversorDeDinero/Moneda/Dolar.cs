@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Moneda{
 
-    class Dolar
+    public class Dolar
     {
 		private const double cotizacionDefault = 1;
 		private double cantidad;

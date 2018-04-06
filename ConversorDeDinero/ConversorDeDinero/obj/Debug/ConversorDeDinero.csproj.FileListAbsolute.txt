@@ -8,3 +8,14 @@ C:\Users\Lucas-notebook\source\repos\ConversorDeDinero\ConversorDeDinero\obj\Deb
 C:\Users\Lucas-notebook\source\repos\ConversorDeDinero\ConversorDeDinero\obj\Debug\ConversorDeDinero.csproj.CoreCompileInputs.cache
 C:\Users\Lucas-notebook\source\repos\ConversorDeDinero\ConversorDeDinero\obj\Debug\ConversorDeDinero.exe
 C:\Users\Lucas-notebook\source\repos\ConversorDeDinero\ConversorDeDinero\obj\Debug\ConversorDeDinero.pdb
+D:\lucas\ConversorDeDinero\ConversorDeDinero\bin\Debug\ConversorDeDinero.exe.config
+D:\lucas\ConversorDeDinero\ConversorDeDinero\obj\Debug\ConversorDeDinero.exe
+D:\lucas\ConversorDeDinero\ConversorDeDinero\obj\Debug\ConversorDeDinero.pdb
+D:\lucas\ConversorDeDinero\ConversorDeDinero\obj\Debug\ConversorDeDinero.csprojResolveAssemblyReference.cache
+D:\lucas\ConversorDeDinero\ConversorDeDinero\obj\Debug\ConversorDeDinero.Form1.resources
+D:\lucas\ConversorDeDinero\ConversorDeDinero\obj\Debug\ConversorDeDinero.Properties.Resources.resources
+D:\lucas\ConversorDeDinero\ConversorDeDinero\obj\Debug\ConversorDeDinero.csproj.GenerateResource.Cache
+D:\lucas\ConversorDeDinero\ConversorDeDinero\bin\Debug\ConversorDeDinero.exe
+D:\lucas\ConversorDeDinero\ConversorDeDinero\bin\Debug\ConversorDeDinero.pdb
+D:\lucas\ConversorDeDinero\ConversorDeDinero\bin\Debug\Moneda.dll
+D:\lucas\ConversorDeDinero\ConversorDeDinero\bin\Debug\Moneda.pdb

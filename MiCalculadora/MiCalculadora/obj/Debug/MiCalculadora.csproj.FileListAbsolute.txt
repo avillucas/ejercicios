@@ -1,0 +1,9 @@
+D:\lucas\MiCalculadora\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+D:\lucas\MiCalculadora\MiCalculadora\bin\Debug\MiCalculadora.exe
+D:\lucas\MiCalculadora\MiCalculadora\bin\Debug\MiCalculadora.pdb
+D:\lucas\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.csprojResolveAssemblyReference.cache
+D:\lucas\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.Form1.resources
+D:\lucas\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+D:\lucas\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.Cache
+D:\lucas\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.exe
+D:\lucas\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.pdb
