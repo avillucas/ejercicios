@@ -9,3 +9,17 @@ D:\lucas\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.pdb
 D:\lucas\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.LaCalculadora.resources
 D:\lucas\MiCalculadora\MiCalculadora\bin\Debug\Entidades.exe
 D:\lucas\MiCalculadora\MiCalculadora\bin\Debug\Entidades.pdb
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\bin\Debug\MiCalculadora.exe
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\bin\Debug\MiCalculadora.pdb
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\bin\Debug\Entidades.exe
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\bin\Debug\Entidades.pdb
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\bin\Debug\Entidades.exe.config
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.csprojResolveAssemblyReference.cache
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.LaCalculadora.resources
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.exe
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\MiCalculadora\obj\Debug\MiCalculadora.pdb

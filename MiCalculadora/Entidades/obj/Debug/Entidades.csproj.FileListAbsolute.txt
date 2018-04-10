@@ -3,3 +3,10 @@ D:\lucas\MiCalculadora\Entidades\bin\Debug\Entidades.exe
 D:\lucas\MiCalculadora\Entidades\bin\Debug\Entidades.pdb
 D:\lucas\MiCalculadora\Entidades\obj\Debug\Entidades.exe
 D:\lucas\MiCalculadora\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\bin\Debug\Entidades.exe.config
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\bin\Debug\Entidades.exe
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\obj\Debug\Entidades.exe
+C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\obj\Debug\Entidades.pdb

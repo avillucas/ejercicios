@@ -41,12 +41,14 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
-
+            double resultado = Calculadora.Operar(new Numero(txtNumero1.Text),new Numero(txtNumero2.Text), cmbOperar.Text);
+            lblResultado.Text = resultado.ToString();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-
+            //TODO  Revisar si funciona
+            LaCalculadora.ActiveForm.Close();
         }
 
         /// <summary>
@@ -69,13 +71,22 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-            //TODO validar si el numero es binario            
-            bool esBinario = true;
-            if (lblResultado.Text.Length > 0 && esBinario )
+            //TODO Ver si lo que busca el ejercicio es comprar contra valor invalido
+            if (lblResultado.Text.Length > 0 )
             {
                 string strResultado = Numero.BinarioDecimal(lblResultado.Text);
                 lblResultado.Text = strResultado;
             }
+        }
+
+        private void cmbOperar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblResultado_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

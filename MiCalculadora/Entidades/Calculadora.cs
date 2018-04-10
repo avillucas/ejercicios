@@ -16,12 +16,12 @@ namespace Entidades
         /// <returns>Operando a utilizar</returns>
         private static string ValidarOperador(string operador)
         {
-            if (operador != "-" && operador != "/" && operador != "*")
+            if (operador == "-" || operador == "/" || operador == "*")
                 return operador;
             return "+";            
         }
 
-        public double Operar(Numero num1, Numero num2, string operador) { 
+        public static double Operar(Numero num1, Numero num2, string operador) { 
             string operadorValido = ValidarOperador(operador);
             double resultado = 0 ;
             switch (operadorValido) { 
@@ -35,7 +35,7 @@ namespace Entidades
                     resultado = num1 / num2;
                 break;
                 case "*":
-                    resultado = num1 + num2;
+                    resultado = num1 * num2;
                 break;
             }
             return resultado;

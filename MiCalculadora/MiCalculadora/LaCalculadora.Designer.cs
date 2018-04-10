@@ -41,9 +41,9 @@
             // 
             // btnOperar
             // 
-            this.btnOperar.Location = new System.Drawing.Point(76, 146);
+            this.btnOperar.Location = new System.Drawing.Point(76, 128);
             this.btnOperar.Name = "btnOperar";
-            this.btnOperar.Size = new System.Drawing.Size(75, 23);
+            this.btnOperar.Size = new System.Drawing.Size(94, 46);
             this.btnOperar.TabIndex = 0;
             this.btnOperar.Text = "Operar";
             this.btnOperar.UseVisualStyleBackColor = true;
@@ -51,9 +51,9 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(173, 146);
+            this.btnLimpiar.Location = new System.Drawing.Point(176, 128);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 46);
             this.btnLimpiar.TabIndex = 1;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -61,9 +61,9 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(269, 146);
+            this.btnCerrar.Location = new System.Drawing.Point(257, 128);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrar.Size = new System.Drawing.Size(94, 46);
             this.btnCerrar.TabIndex = 2;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@
             // 
             // btnConvertirABinario
             // 
-            this.btnConvertirABinario.Location = new System.Drawing.Point(76, 190);
+            this.btnConvertirABinario.Location = new System.Drawing.Point(76, 180);
             this.btnConvertirABinario.Name = "btnConvertirABinario";
-            this.btnConvertirABinario.Size = new System.Drawing.Size(138, 23);
+            this.btnConvertirABinario.Size = new System.Drawing.Size(135, 33);
             this.btnConvertirABinario.TabIndex = 3;
             this.btnConvertirABinario.Text = "Convertir a Binario";
             this.btnConvertirABinario.UseVisualStyleBackColor = true;
@@ -81,9 +81,9 @@
             // 
             // btnConvertirADecimal
             // 
-            this.btnConvertirADecimal.Location = new System.Drawing.Point(236, 190);
+            this.btnConvertirADecimal.Location = new System.Drawing.Point(216, 180);
             this.btnConvertirADecimal.Name = "btnConvertirADecimal";
-            this.btnConvertirADecimal.Size = new System.Drawing.Size(138, 23);
+            this.btnConvertirADecimal.Size = new System.Drawing.Size(135, 33);
             this.btnConvertirADecimal.TabIndex = 4;
             this.btnConvertirADecimal.Text = "Convertir a Decimal";
             this.btnConvertirADecimal.UseVisualStyleBackColor = true;
@@ -91,45 +91,53 @@
             // 
             // txtNumero1
             // 
+            this.txtNumero1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumero1.Location = new System.Drawing.Point(76, 69);
             this.txtNumero1.Name = "txtNumero1";
-            this.txtNumero1.Size = new System.Drawing.Size(100, 20);
+            this.txtNumero1.Size = new System.Drawing.Size(100, 53);
             this.txtNumero1.TabIndex = 5;
+            this.txtNumero1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNumero2
             // 
-            this.txtNumero2.Location = new System.Drawing.Point(376, 69);
+            this.txtNumero2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumero2.Location = new System.Drawing.Point(251, 69);
             this.txtNumero2.Name = "txtNumero2";
-            this.txtNumero2.Size = new System.Drawing.Size(100, 20);
+            this.txtNumero2.Size = new System.Drawing.Size(100, 53);
             this.txtNumero2.TabIndex = 6;
+            this.txtNumero2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // cmbOperar
             // 
+            this.cmbOperar.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbOperar.FormattingEnabled = true;
             this.cmbOperar.Items.AddRange(new object[] {
             "/",
             "*",
             "+",
             "-"});
-            this.cmbOperar.Location = new System.Drawing.Point(205, 68);
+            this.cmbOperar.Location = new System.Drawing.Point(182, 68);
             this.cmbOperar.Name = "cmbOperar";
-            this.cmbOperar.Size = new System.Drawing.Size(121, 21);
+            this.cmbOperar.Size = new System.Drawing.Size(63, 54);
             this.cmbOperar.TabIndex = 7;
+            this.cmbOperar.SelectedIndexChanged += new System.EventHandler(this.cmbOperar_SelectedIndexChanged);
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(373, 9);
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(76, 9);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(86, 13);
+            this.lblResultado.Size = new System.Drawing.Size(0, 54);
             this.lblResultado.TabIndex = 8;
-            this.lblResultado.Text = "sadasdasdasdas";
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lblResultado.Click += new System.EventHandler(this.lblResultado_Click);
             // 
             // LaCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 262);
+            this.ClientSize = new System.Drawing.Size(433, 240);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.cmbOperar);
             this.Controls.Add(this.txtNumero2);
