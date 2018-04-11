@@ -4,3 +4,9 @@ D:\VisualStudio\Ejercicio_16\Ejercicio_16\bin\Debug\Ejercicio_16.exe
 D:\VisualStudio\Ejercicio_16\Ejercicio_16\bin\Debug\Ejercicio_16.pdb
 D:\VisualStudio\Ejercicio_16\Ejercicio_16\obj\Debug\Ejercicio_16.exe
 D:\VisualStudio\Ejercicio_16\Ejercicio_16\obj\Debug\Ejercicio_16.pdb
+D:\lucas\Ejercicio_16\Ejercicio_16\bin\Debug\Ejercicio_16.exe.config
+D:\lucas\Ejercicio_16\Ejercicio_16\obj\Debug\Ejercicio_16.exe
+D:\lucas\Ejercicio_16\Ejercicio_16\obj\Debug\Ejercicio_16.csprojResolveAssemblyReference.cache
+D:\lucas\Ejercicio_16\Ejercicio_16\bin\Debug\Ejercicio_16.exe
+D:\lucas\Ejercicio_16\Ejercicio_16\bin\Debug\Ejercicio_16.pdb
+D:\lucas\Ejercicio_16\Ejercicio_16\obj\Debug\Ejercicio_16.pdb

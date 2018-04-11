@@ -10,3 +10,10 @@ C:\Users\alumno\Desktop\ejercicios\Ejercicio_17\Ejercicio_17\obj\Debug\Ejercicio
 C:\Users\alumno\Desktop\ejercicios\Ejercicio_17\Ejercicio_17\bin\Debug\Ejercicio_17.exe
 C:\Users\alumno\Desktop\ejercicios\Ejercicio_17\Ejercicio_17\bin\Debug\Ejercicio_17.pdb
 C:\Users\alumno\Desktop\ejercicios\Ejercicio_17\Ejercicio_17\obj\Debug\Ejercicio_17.csprojResolveAssemblyReference.cache
+D:\lucas\Ejercicio_17\Ejercicio_17\bin\Debug\Ejercicio_17.exe.config
+D:\lucas\Ejercicio_17\Ejercicio_17\bin\Debug\Ejercicio_17.exe
+D:\lucas\Ejercicio_17\Ejercicio_17\bin\Debug\Ejercicio_17.pdb
+D:\lucas\Ejercicio_17\Ejercicio_17\obj\Debug\Ejercicio_17.exe
+D:\lucas\Ejercicio_17\Ejercicio_17\obj\Debug\Ejercicio_17.pdb
+D:\lucas\Ejercicio_17\Ejercicio_17\bin\Debug\Ejercicio_17.exe.CodeAnalysisLog.xml
+D:\lucas\Ejercicio_17\Ejercicio_17\bin\Debug\Ejercicio_17.exe.lastcodeanalysissucceeded

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicion_11
+namespace Ejercicio_11
 {
     class Validacion
     {

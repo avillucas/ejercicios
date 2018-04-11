@@ -58,10 +58,14 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-            if (lblResultado.Text.Length > 0) {
-                string strResultado = Numero.DecimalABinario(lblResultado.Text);
-                lblResultado.Text = strResultado;
-            }
+            if (lblResultado.Text.Length <= 0){
+                DialogResult ms = MessageBox.Show("No existe numero a convertir");
+                return ;
+            }            
+            //TODO Determinar si el numero es decimal para evitar hacerlo de nuevo 
+            btnConvertirABinario.Enabled = false;
+            string strResultado = Numero.DecimalABinario(lblResultado.Text);
+            lblResultado.Text = strResultado;            
         }
 
         /// <summary>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicion_11
+namespace Ejercicio_11
 {
     /// <summary>
     /// 11. Ingresar 10 números enteros que pueden estar dentro de un rango de entre -100 y 100.

@@ -42,7 +42,7 @@ namespace Ejercicio_16
         public void Estudiar(byte notaUno, byte notaDos) {
             this._nota1 = notaUno;
             this._nota2 = notaDos;
-            this._notaFinal();
+            CalcularFinal();
         }
 
         /// <summary>
