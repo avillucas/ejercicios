@@ -81,6 +81,7 @@
             // 
             // btnConvertirADecimal
             // 
+            this.btnConvertirADecimal.Enabled = false;
             this.btnConvertirADecimal.Location = new System.Drawing.Point(216, 180);
             this.btnConvertirADecimal.Name = "btnConvertirADecimal";
             this.btnConvertirADecimal.Size = new System.Drawing.Size(135, 33);
@@ -97,6 +98,7 @@
             this.txtNumero1.Size = new System.Drawing.Size(100, 53);
             this.txtNumero1.TabIndex = 5;
             this.txtNumero1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNumero1.TextChanged += new System.EventHandler(this.txtNumero1_TextChanged);
             // 
             // txtNumero2
             // 
@@ -106,9 +108,11 @@
             this.txtNumero2.Size = new System.Drawing.Size(100, 53);
             this.txtNumero2.TabIndex = 6;
             this.txtNumero2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNumero2.TextChanged += new System.EventHandler(this.txtNumero2_TextChanged);
             // 
             // cmbOperar
             // 
+            this.cmbOperar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOperar.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbOperar.FormattingEnabled = true;
             this.cmbOperar.Items.AddRange(new object[] {
@@ -120,7 +124,6 @@
             this.cmbOperar.Name = "cmbOperar";
             this.cmbOperar.Size = new System.Drawing.Size(63, 54);
             this.cmbOperar.TabIndex = 7;
-            this.cmbOperar.SelectedIndexChanged += new System.EventHandler(this.cmbOperar_SelectedIndexChanged);
             // 
             // lblResultado
             // 
@@ -128,10 +131,10 @@
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultado.Location = new System.Drawing.Point(76, 9);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(0, 54);
+            this.lblResultado.Size = new System.Drawing.Size(49, 54);
             this.lblResultado.TabIndex = 8;
+            this.lblResultado.Text = "0";
             this.lblResultado.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.lblResultado.Click += new System.EventHandler(this.lblResultado_Click);
             // 
             // LaCalculadora
             // 
@@ -153,6 +156,7 @@
             this.Name = "LaCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Lucas Ariel Avila del 2ºC";
+            this.Load += new System.EventHandler(this.LaCalculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

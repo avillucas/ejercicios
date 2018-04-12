@@ -31,7 +31,8 @@ namespace Entidades
               
         #region Conversores
         /// <summary>
-        /// ValidarNumero comprobará que el valor recibido sea numérico, y lo retornará en        /// formato double. Caso contrario, retornará 0.
+        /// ValidarNumero comprobará que el valor recibido sea numérico, y lo retornará en
+        /// formato double. Caso contrario, retornará 0.
         /// </summary>
         /// <param name="strNumero"></param>
         /// <returns></returns>
@@ -65,9 +66,10 @@ namespace Entidades
         /// </summary>
         /// <param name="numero">Valor decimal a convertir a binario</param>
         /// <returns>Numero binario</returns>
-        public static string DecimalABinario(double numero)
+        public static string DecimalABinario(double numeroOriginal)
         {
             string numeroBinario = "";
+            int numero = (int)numeroOriginal;
             do
             {
                 double resto = numero % 2;
@@ -76,7 +78,7 @@ namespace Entidades
                 //obtener un orden inverso
                 numeroBinario = parteBinaria.ToString() + numeroBinario.ToString();
                 //procesar el resultado de la division
-                numero = numero / 2;
+                numero = (int) (numero / 2);
             } while (numero != 1 && numero != 0);
             //110010
             //agregando el ultimo valor

@@ -14,10 +14,15 @@ namespace MiCalculadora
     public partial class LaCalculadora : Form
     {
         public LaCalculadora()
-        {
-            InitializeComponent();
+        {            
+            InitializeComponent();     
+           
         }
 
+        private void LaCalculadora_Load(object sender, EventArgs e)
+        {
+            cmbOperar.Text = "+";
+        }
         /// <summary>
         /// El método Limpiar será llamado por el evento click del botón btnLimpiar y borrará
         /// los datos de los TextBox, ComboBox y Label de la pantalla
@@ -43,12 +48,14 @@ namespace MiCalculadora
         {
             double resultado = Calculadora.Operar(new Numero(txtNumero1.Text),new Numero(txtNumero2.Text), cmbOperar.Text);
             lblResultado.Text = resultado.ToString();
+            //se vuelve decimal de nuevo 
+            btnConvertirABinario.Enabled = true;
+            btnConvertirADecimal.Enabled = false;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            //TODO  Revisar si funciona
-            LaCalculadora.ActiveForm.Close();
+            this.Close();
         }
 
         /// <summary>
@@ -57,15 +64,11 @@ namespace MiCalculadora
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
-        {
-            if (lblResultado.Text.Length <= 0){
-                DialogResult ms = MessageBox.Show("No existe numero a convertir");
-                return ;
-            }            
-            //TODO Determinar si el numero es decimal para evitar hacerlo de nuevo 
-            btnConvertirABinario.Enabled = false;
+        {            
             string strResultado = Numero.DecimalABinario(lblResultado.Text);
-            lblResultado.Text = strResultado;            
+            lblResultado.Text = strResultado;
+            btnConvertirABinario.Enabled = false;
+            btnConvertirADecimal.Enabled = true;            
         }
 
         /// <summary>
@@ -74,23 +77,35 @@ namespace MiCalculadora
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
+        {          
+            string strResultado = Numero.BinarioDecimal(lblResultado.Text);
+            lblResultado.Text = strResultado;
+            btnConvertirABinario.Enabled = true;
+            btnConvertirADecimal.Enabled = false;        
+        }
+
+        private static bool validateInput(string text){
+            double numero;
+            return double.TryParse(text,out numero);
+                
+        }
+        private void txtNumero2_TextChanged(object sender, EventArgs e)
         {
-            //TODO Ver si lo que busca el ejercicio es comprar contra valor invalido
-            if (lblResultado.Text.Length > 0 )
+            if (!validateInput(txtNumero2.Text))
             {
-                string strResultado = Numero.BinarioDecimal(lblResultado.Text);
-                lblResultado.Text = strResultado;
+                txtNumero2.Text = "0";
+                MessageBox.Show("Debe ingresar un numero", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void cmbOperar_SelectedIndexChanged(object sender, EventArgs e)
+        private void txtNumero1_TextChanged(object sender, EventArgs e)
         {
-
+            if (!validateInput(txtNumero1.Text))
+            {
+                txtNumero1.Text = "0";
+                MessageBox.Show("Debe ingresar un numero", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void lblResultado_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
