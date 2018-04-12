@@ -19,15 +19,14 @@ namespace Ejercicio_26
 
         static void Main(string[] args)
         {            
-            int[] numeros = new int[cantidadDeNumeros];            
+            int[] numeros = new int[cantidadDeNumeros];
             int numero;
             Random random = new Random();               
             for (var i = 0; i < cantidadDeNumeros; i++ ) {
                 numero = random.Next(int.MinValue, int.MaxValue);
                 if (numero != 0)
                 {
-                    numeros[i] = numero;
-
+                    numeros[i] = numero;                    
                 }
                 else 
                 {
@@ -37,7 +36,9 @@ namespace Ejercicio_26
             //a. Mostrar el vector tal como fue ingresado
             Consola.MostrarVector(numeros);
             // b. Luego mostrar los positivos ordenados en forma decreciente.
-            
+            foreach (int nro in numeros) { 
+                
+            }
             // c. Por último, mostrar los negativos ordenados en forma creciente.
 
         }

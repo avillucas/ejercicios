@@ -18,7 +18,7 @@ namespace Ejercicio_26
         {            
             for (var i = 0; i < vector.Length; i++)
             {                
-                Console.Write(formato, vector[i]);
+                Console.WriteLine(formato, vector[i]);
             }            
             CongelarPantalla();
         }
@@ -29,7 +29,7 @@ namespace Ejercicio_26
         /// <param name="vector">vector de valores a mostrar</param>
         public static void MostrarVector(int[] vector)
         {
-            MostrarVector(vector, "\n{0,10}");
+            MostrarVector(vector, "{0,15}");
         }
 
         /// <summary>
