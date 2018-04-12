@@ -127,14 +127,14 @@
             // 
             // lblResultado
             // 
-            this.lblResultado.AutoSize = true;
+            this.lblResultado.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(76, 9);
+            this.lblResultado.Location = new System.Drawing.Point(0, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(49, 54);
+            this.lblResultado.Size = new System.Drawing.Size(433, 54);
             this.lblResultado.TabIndex = 8;
             this.lblResultado.Text = "0";
-            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // LaCalculadora
             // 
