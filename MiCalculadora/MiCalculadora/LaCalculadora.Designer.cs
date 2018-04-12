@@ -98,7 +98,6 @@
             this.txtNumero1.Size = new System.Drawing.Size(100, 53);
             this.txtNumero1.TabIndex = 5;
             this.txtNumero1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtNumero1.TextChanged += new System.EventHandler(this.txtNumero1_TextChanged);
             // 
             // txtNumero2
             // 
@@ -108,7 +107,6 @@
             this.txtNumero2.Size = new System.Drawing.Size(100, 53);
             this.txtNumero2.TabIndex = 6;
             this.txtNumero2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtNumero2.TextChanged += new System.EventHandler(this.txtNumero2_TextChanged);
             // 
             // cmbOperar
             // 

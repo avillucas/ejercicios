@@ -19,6 +19,11 @@ namespace MiCalculadora
            
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LaCalculadora_Load(object sender, EventArgs e)
         {
             cmbOperar.Text = "+";
@@ -46,6 +51,18 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
+            //validar si es un numero 
+            if (!validateInput(txtNumero1.Text))
+            {
+                MessageBox.Show("Debe ingresar un numero en el operando", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            //validar si es un numero 
+            if (!validateInput(txtNumero2.Text))
+            {
+                MessageBox.Show("Debe ingresar un numero en el operando", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             double resultado = Calculadora.Operar(new Numero(txtNumero1.Text),new Numero(txtNumero2.Text), cmbOperar.Text);
             lblResultado.Text = resultado.ToString();
             //se vuelve decimal de nuevo 
@@ -84,28 +101,17 @@ namespace MiCalculadora
             btnConvertirADecimal.Enabled = false;        
         }
 
+        /// <summary>
+        /// Determina si lo ingresado puede ser convertido a un numero
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        /// <remaremarks> Mejorar la forma de determinar el proceso </remaremarks>        
         private static bool validateInput(string text){
             double numero;
             return double.TryParse(text,out numero);
                 
-        }
-        private void txtNumero2_TextChanged(object sender, EventArgs e)
-        {
-            if (!validateInput(txtNumero2.Text))
-            {
-                txtNumero2.Text = "0";
-                MessageBox.Show("Debe ingresar un numero", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void txtNumero1_TextChanged(object sender, EventArgs e)
-        {
-            if (!validateInput(txtNumero1.Text))
-            {
-                txtNumero1.Text = "0";
-                MessageBox.Show("Debe ingresar un numero", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        }    
 
     }
 }
