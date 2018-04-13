@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversorDeDinero", "..\Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moneda", "..\ConversorDeDinero\Moneda\Moneda.csproj", "{B32335A2-C3A0-400B-91C5-A3B481AFB05D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_27", "Ejercicio_27\Ejercicio_27.csproj", "{FE615142-19F7-4384-8143-690D4A3223E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_28", "Ejercicio_28\Ejercicio_28.csproj", "{1DF174D2-7D99-45C8-9B2A-196997B58BEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +125,14 @@ Global
 		{B32335A2-C3A0-400B-91C5-A3B481AFB05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B32335A2-C3A0-400B-91C5-A3B481AFB05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B32335A2-C3A0-400B-91C5-A3B481AFB05D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE615142-19F7-4384-8143-690D4A3223E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE615142-19F7-4384-8143-690D4A3223E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE615142-19F7-4384-8143-690D4A3223E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE615142-19F7-4384-8143-690D4A3223E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF174D2-7D99-45C8-9B2A-196997B58BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF174D2-7D99-45C8-9B2A-196997B58BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF174D2-7D99-45C8-9B2A-196997B58BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF174D2-7D99-45C8-9B2A-196997B58BEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

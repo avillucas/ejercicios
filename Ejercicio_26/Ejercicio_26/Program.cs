@@ -36,11 +36,18 @@ namespace Ejercicio_26
             //a. Mostrar el vector tal como fue ingresado
             Consola.MostrarVector(numeros);
             // b. Luego mostrar los positivos ordenados en forma decreciente.
-            foreach (int nro in numeros) { 
-                
-            }
-            // c. Por último, mostrar los negativos ordenados en forma creciente.
+            Array.Sort(numeros, delegate(int numero1, int  numero2)
+            {
+                if (numero1 < numero2) return 1;
+                else if (numero1 > numero2) return -1;
+                return 0;
 
+            });
+            Consola.MostrarVectorPositivos(numeros);
+            // c. Por último, mostrar los negativos ordenados en forma creciente.
+            Array.Sort(numeros);
+            Consola.MostrarVectorNegativos(numeros);
+            Consola.CongelarPantalla();
         }
         
 
