@@ -1,4 +1,0 @@
-D:\lucas\ConversorDeDinero\Moneda\bin\Debug\Moneda.dll
-D:\lucas\ConversorDeDinero\Moneda\bin\Debug\Moneda.pdb
-D:\lucas\ConversorDeDinero\Moneda\obj\Debug\Moneda.dll
-D:\lucas\ConversorDeDinero\Moneda\obj\Debug\Moneda.pdb

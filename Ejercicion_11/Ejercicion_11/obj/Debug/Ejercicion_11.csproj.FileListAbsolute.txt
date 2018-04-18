@@ -1,6 +1,0 @@
-D:\VisualStudio\Ejercicion_11\Ejercicion_11\bin\Debug\Ejercicion_11.exe.config
-D:\VisualStudio\Ejercicion_11\Ejercicion_11\obj\Debug\Ejercicion_11.csprojResolveAssemblyReference.cache
-D:\VisualStudio\Ejercicion_11\Ejercicion_11\bin\Debug\Ejercicion_11.exe
-D:\VisualStudio\Ejercicion_11\Ejercicion_11\bin\Debug\Ejercicion_11.pdb
-D:\VisualStudio\Ejercicion_11\Ejercicion_11\obj\Debug\Ejercicion_11.exe
-D:\VisualStudio\Ejercicion_11\Ejercicion_11\obj\Debug\Ejercicion_11.pdb
