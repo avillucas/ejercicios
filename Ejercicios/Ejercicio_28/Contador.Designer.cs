@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contador));
             this.txtContenido = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -39,7 +40,7 @@
             this.txtContenido.Name = "txtContenido";
             this.txtContenido.Size = new System.Drawing.Size(836, 199);
             this.txtContenido.TabIndex = 0;
-            this.txtContenido.Text = "toto toto tato tito totu tato tito tuto toto tutu tato tito tito tuto tito";
+            this.txtContenido.Text = resources.GetString("txtContenido.Text");
             // 
             // btnCalcular
             // 

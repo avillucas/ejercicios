@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Ejercicio_28
 {
@@ -18,6 +19,11 @@ namespace Ejercicio_28
     {
 
         /// <summary>
+        /// Determina la cantidad de resultados al mostrar en el ranking del final 
+        /// </summary>
+        const int tamañoTop = 10;
+
+        /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
@@ -28,31 +34,42 @@ namespace Ejercicio_28
             Application.Run(new Contador());
         }
 
+        /// <summary>
+        /// Procesa rawText separandolo en palabras y retornando las 3 palabras mas usadas
+        /// </summary>
+        /// <param name="rawText"></param>
+        /// <returns></returns>
         public static Queue<string> Procesar(string rawText) 
-        {
+        {            
             Dictionary<string, int> contador = new Dictionary<string,int>();
-            Queue<string> top3 = new Queue<string>();
-            string[] palabras = rawText.Split(' ');
-            foreach(string palabra in palabras)
+            Queue<string> top3 = new Queue<string>();                        
+            //separar palabras            
+            MatchCollection coincidencias = Regex.Matches(rawText, @"((\b[^\s]+\b)((?<=\.\w).)?)");
+            //
+            foreach(var coincidencia in coincidencias)
             {
-                if (contador.Keys.Any(i => i == palabra))
+
+                string palabra = coincidencia.ToString();
+                if(contador.ContainsKey(palabra)) 
                 {
+                    //sumar al contador de cada palabra 
                     ++contador[palabra];                    
                 }
                 else 
                 {
+                    //agregar al diccionario si es que no existe
                     contador.Add(palabra, 1);
                 }
-            }
-            contador= contador.OrderByDescending(v => v.Value);                                               
-            
-            foreach (KeyValuePair<string, int> keyValue in contador) {
+            }            
+            //OrdenarDescendente y mostrar solo 3 
+            foreach (KeyValuePair<string, int> keyValue in  contador.OrderByDescending(i => i.Value))
+            {
                 top3.Enqueue(keyValue.Key + ": " + keyValue.Value.ToString());
-                if (top3.Count == 3) { break; }
+                //cortar cuando encuentre tamaño top pasadas 
+                if (top3.Count == tamañoTop) { break; }
             }
             return top3;
-        }
-        
+        }        
     }
     
 }
