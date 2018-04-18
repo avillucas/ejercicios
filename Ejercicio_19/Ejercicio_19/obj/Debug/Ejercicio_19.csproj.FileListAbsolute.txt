@@ -1,7 +1,0 @@
-C:\Users\avill\source\repos\Ejercicio_19\Ejercicio_19\bin\Debug\Ejercicio_19.exe.config
-C:\Users\avill\source\repos\Ejercicio_19\Ejercicio_19\bin\Debug\Ejercicio_19.exe
-C:\Users\avill\source\repos\Ejercicio_19\Ejercicio_19\bin\Debug\Ejercicio_19.pdb
-C:\Users\avill\source\repos\Ejercicio_19\Ejercicio_19\obj\Debug\Ejercicio_19.csprojResolveAssemblyReference.cache
-C:\Users\avill\source\repos\Ejercicio_19\Ejercicio_19\obj\Debug\Ejercicio_19.csproj.CoreCompileInputs.cache
-C:\Users\avill\source\repos\Ejercicio_19\Ejercicio_19\obj\Debug\Ejercicio_19.exe
-C:\Users\avill\source\repos\Ejercicio_19\Ejercicio_19\obj\Debug\Ejercicio_19.pdb

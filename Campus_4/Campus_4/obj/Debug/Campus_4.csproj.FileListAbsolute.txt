@@ -1,8 +1,0 @@
-C:\Users\alumno\Desktop\ejercicios\Campus_4\Campus_4\bin\Debug\Campus_4.exe.config
-C:\Users\alumno\Desktop\ejercicios\Campus_4\Campus_4\bin\Debug\Campus_4.exe
-C:\Users\alumno\Desktop\ejercicios\Campus_4\Campus_4\bin\Debug\Campus_4.pdb
-C:\Users\alumno\Desktop\ejercicios\Campus_4\Campus_4\obj\Debug\Campus_4.exe
-C:\Users\alumno\Desktop\ejercicios\Campus_4\Campus_4\obj\Debug\Campus_4.pdb
-D:\lucas\Campus_4\Campus_4\bin\Debug\Campus_4.exe.config
-D:\lucas\Campus_4\Campus_4\obj\Debug\Campus_4.exe
-D:\lucas\Campus_4\Campus_4\obj\Debug\Campus_4.pdb
